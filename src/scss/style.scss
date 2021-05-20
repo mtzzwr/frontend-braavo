@@ -1,0 +1,66 @@
+$body_color: #000000;
+$container_width: 100vw;
+$container_height: 100vh;
+$box_width: 700px;
+$box_height: 500px;
+$box_color: #ffffff;
+$off_text_color: #f6284b;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color : $body_color; 
+}
+
+#container {
+    width: $container_width;
+    height: $container_height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container__box {
+    width: $box_width;
+    height: $box_height;
+    background-color : $box_color; 
+    display: flex;
+    flex-direction: row;
+}
+
+#container__left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container__right {
+    width: 50%;
+    height: 100%;
+    background-image: url('../images/foto.jpg');
+}
+
+#container__10off {
+    text-align: center;
+    color: $off_text_color;
+}
+
+#container__newsletter {
+    text-align: center;
+    color: #000000;
+}
+
+#container__form {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__input {
+    height: 44px;
+    margin: 0px 8% 0px 8%;
+}
