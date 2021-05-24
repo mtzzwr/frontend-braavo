@@ -1,9 +1,9 @@
-$body_color: #000000;
+$black_color: #000000;
 $container_width: 100vw;
 $container_height: 100vh;
 $box_width: 700px;
 $box_height: 500px;
-$box_color: #ffffff;
+$white_color: #ffffff;
 $off_text_color: #f6284b;
 $font_family: Arial, Helvetica, sans-serif;
 $image: url('../images/foto.jpg');
@@ -17,20 +17,19 @@ $image: url('../images/foto.jpg');
 body {
     margin: 0;
     padding: 0;
-    background-color : $body_color; 
+    background-color : $black_color; 
     font-family: $font_family;
     #container {
         width: $container_width;
         height: $container_height;
-        @include flex_center;
-        
+        @include flex_center;       
     }
 }
 
 #container__box {
     width: $box_width;
     height: $box_height;
-    background-color : $box_color; 
+    background-color : $white_color; 
     display: flex;
     flex-direction: row;
 }
@@ -54,7 +53,7 @@ body {
         width: 260px;
         margin: 16px;
         text-align: center;
-        color: #000000;
+        color: $black_color;
         span {
             font-size: 18px;
         }
@@ -71,14 +70,14 @@ body {
             margin: 0px 8% 10px 8%;
             text-align: center;
             border: solid 1px #cbcbcb;
-            color: #000000;
+            color: black_color;
             font-size: 16px; 
         }
         #container__button {
             height: 44px;
             margin: 0px 8% 10px 8%;
-            color: #ffffff;
-            background-color: #000000;
+            color: $white_color;
+            background-color: $black_color;
             border: 0px;
             font-weight: bold;
         }
@@ -104,15 +103,13 @@ body {
             #container__left {
                 width: 100%;
                 height: 100%;
-                display: flex;
+                @include flex_center;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 #container__newsletter {
                     width: auto;
                     margin: 16px;
                     text-align: center;
-                    color: #000000;
+                    color: $black_color;
                     span {
                         font-size: 18px;
                     }
@@ -123,14 +120,14 @@ body {
                         margin: 0px 8% 10px 8%;
                         text-align: center;
                         border: solid 1px #cbcbcb;
-                        color: #000000;
+                        color: $black_color;
                         font-size: 16px; 
                     }
                     #container__button {
                         height: 44px;
                         margin: 0px 8% 10px 8%;
-                        color: #ffffff;
-                        background-color: #000000;
+                        color: $white_color;
+                        background-color: $black_color;
                         border: 0px;
                         font-weight: bold;
                     }
